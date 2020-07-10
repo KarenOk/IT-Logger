@@ -8,14 +8,14 @@
       "technician": "Samantha Jones"
     },
     {
-      "id": 1,
+      "id": 2,
       "message": "Load balancer in Lagos mainland region fixed.",
       "attention": false,
       "date": "14-06-2020",
       "technician": "Samantha Jones"
     },
     {
-      "id": 1,
+      "id": 3,
       "message": "Carried out backup database backup.",
       "attention": false,
       "date": "20-06-2020",
