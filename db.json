@@ -32,6 +32,11 @@
       "id": 2,
       "first_name": "Brady",
       "last_name": "Saffire"
+    },
+    {
+      "first_name": "Sandra",
+      "last_name": "Otedola",
+      "id": 3
     }
   ]
 }
