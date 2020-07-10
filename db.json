@@ -4,21 +4,21 @@
       "id": 1,
       "message": "Server 076 down.",
       "attention": true,
-      "date": "10-06-2020",
+      "date": "06-10-2020",
       "technician": "Samantha Jones"
     },
     {
       "id": 2,
       "message": "Load balancer in Lagos mainland region fixed.",
       "attention": false,
-      "date": "14-06-2020",
+      "date": "06-14-2020",
       "technician": "Samantha Jones"
     },
     {
       "id": 3,
       "message": "Carried out backup database backup.",
       "attention": false,
-      "date": "20-06-2020",
+      "date": "06-30-2020",
       "technician": "Brady Saffire"
     }
   ],
