@@ -4,7 +4,7 @@ import Preloader from '../layout/Preloader';
 
 function Logs() {
     const [logs, setLogs] = useState([]);
-    const [loading, setLoading] = useState([false]);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         getLogs();
