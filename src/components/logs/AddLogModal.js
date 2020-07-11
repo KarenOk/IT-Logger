@@ -31,7 +31,7 @@ function AddLogModal() {
                 <div className="row">
                     <div className="input-field">
                         <select id="technician" name="technician" className="browser-default" value={technician} onChange={e => setTechnician(e.target.value)}>
-                            <option value="" disabled selected> -- Choose a technician --</option>
+                            <option value="" disabled> -- Choose a technician --</option>
                             <option value="Samantha Jones"> Samantha Jones</option>
                             <option value="Brady Saffire"> Brady Saffire</option>
                             <option value="Sandra Otedola"> Sandra Otedola</option>
