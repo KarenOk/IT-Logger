@@ -8,6 +8,7 @@ import AddButton from './components/layout/AddButton';
 import AddLogModal from './components/logs/AddLogModal';
 import EditLogModal from './components/logs/EditLogModal';
 import AddTechnicianModal from './components/technicians/AddTechnicianModal';
+import ViewTechniciansModal from './components/technicians/ViewTechniciansModal';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <AddLogModal />
         <EditLogModal />
         <AddTechnicianModal />
+        <ViewTechniciansModal />
       </div>
     </div>
   );
