@@ -6,6 +6,7 @@ import SearchBar from './components/layout/SearchBar';
 import Logs from './components/logs/Logs';
 import AddButton from './components/layout/AddButton';
 import AddLogModal from './components/logs/AddLogModal';
+import EditLogModal from './components/logs/EditLogModal';
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <div className="container">
         <AddButton />
         <AddLogModal />
+        <EditLogModal />
         <Logs />
       </div>
     </div>
