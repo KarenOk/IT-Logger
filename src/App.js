@@ -7,7 +7,7 @@ import Logs from './components/logs/Logs';
 import AddButton from './components/layout/AddButton';
 import AddLogModal from './components/logs/AddLogModal';
 import EditLogModal from './components/logs/EditLogModal';
-
+import AddTechnicianModal from './components/technicians/AddTechnicianModal';
 
 
 function App() {
@@ -19,10 +19,11 @@ function App() {
     <div className="App">
       <SearchBar />
       <div className="container">
+        <Logs />
         <AddButton />
         <AddLogModal />
         <EditLogModal />
-        <Logs />
+        <AddTechnicianModal />
       </div>
     </div>
   );
