@@ -5,6 +5,7 @@ import './App.css';
 import SearchBar from './components/layout/SearchBar';
 import Logs from './components/logs/Logs';
 import AddButton from './components/layout/AddButton';
+import AddLogModal from './components/logs/AddLogModal';
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <SearchBar />
       <div className="container">
         <AddButton />
+        <AddLogModal />
         <Logs />
       </div>
     </div>
