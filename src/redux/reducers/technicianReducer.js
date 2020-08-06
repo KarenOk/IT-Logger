@@ -19,10 +19,25 @@ export default (state = initialState, action) => {
 				...state,
 				technicians: action.payload
 			};
+		case ADD_TECHNICIAN:
+			return {
+				...state,
+				technicians: [...state.technicians, action.payload]
+			};
 		case DELETE_TECHNICIAN:
 			return {
 				...state,
 				technicians: state.technicians.filter(technician => technician.id !== action.payload)
+			};
+		case SET_TECHNICIANS_LOADING:
+			return {
+				...state,
+				loading: action.payload
+			};
+		case SET_TECHNICIANS_ERROR:
+			return {
+				...state,
+				error: action.payload
 			};
 		default:
 			return state;

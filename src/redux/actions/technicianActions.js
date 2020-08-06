@@ -26,6 +26,31 @@ export const getTechnicians = () => async dispatch => {
 	dispatch(setLoading(false));
 };
 
+export const addTechnician = technician => async dispatch => {
+	dispatch(setLoading(true));
+
+	try {
+		const res = await fetch("/technicians", {
+			method: "POST",
+			body: JSON.stringify(technician),
+			headers: {
+				"Content-Type": "application/json"
+			}
+		});
+		const data = await res.json();
+		dispatch({
+			type: ADD_TECHNICIAN,
+			payload: data
+		});
+	} catch (error) {
+		dispatch({
+			type: SET_TECHNICIANS_ERROR,
+			payload: error
+		});
+	}
+	dispatch(setLoading(false));
+};
+
 // delete technician
 export const deleteTechnician = id => async dispatch => {
 	dispatch(setLoading(true));

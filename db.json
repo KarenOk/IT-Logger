@@ -8,11 +8,11 @@
       "technician": "Samantha Jones"
     },
     {
+      "id": 4,
       "message": "Carried out backup database backup.",
-      "technician": "Samantha Jones",
+      "technician": "Karen Okonkwo",
       "attention": false,
-      "date": "2020-08-06T11:58:36.184Z",
-      "id": 4
+      "date": "2020-08-06T16:04:13.836Z"
     },
     {
       "id": 5,
@@ -37,6 +37,11 @@
       "first_name": "Sandra",
       "last_name": "Otedola",
       "id": 3
+    },
+    {
+      "first_name": "Karen",
+      "last_name": "Okonkwo",
+      "id": 4
     }
   ]
 }
