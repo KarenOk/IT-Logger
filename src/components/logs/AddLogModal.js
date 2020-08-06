@@ -10,19 +10,20 @@ function AddLogModal({ addLog }) {
 	const [attention, setAttention] = useState(false);
 
 	const submit = () => {
-		if (!message || !technician || !attention) M.toast({ html: "All fields are required. " });
+		if (!message || !technician) M.toast({ html: "All fields are required. " });
+		else {
+			addLog({
+				message,
+				technician,
+				attention,
+				date: new Date()
+			});
+			M.toast({ html: `Log added by ${technician}.` });
 
-		addLog({
-			message,
-			technician,
-			attention,
-			date: new Date()
-		});
-		M.toast({ html: `Log added by ${technician}.` });
-
-		setMessage("");
-		setTechnician("");
-		setAttention(false);
+			setMessage("");
+			setTechnician("");
+			setAttention(false);
+		}
 	};
 
 	return (
@@ -37,6 +38,7 @@ function AddLogModal({ addLog }) {
 							name="message"
 							id="message"
 							className="active"
+							value={message}
 							onChange={e => setMessage(e.target.value)}
 						/>
 						<label htmlFor="message"> Message</label>
