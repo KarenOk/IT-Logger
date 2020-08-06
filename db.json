@@ -1,13 +1,6 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "Server 076 down.",
-      "attention": true,
-      "date": "06-10-2020",
-      "technician": "Samantha Jones"
-    },
-    {
       "id": 2,
       "message": "Load balancer in Lagos mainland region fixed.",
       "attention": false,
@@ -15,11 +8,25 @@
       "technician": "Samantha Jones"
     },
     {
-      "id": 3,
-      "message": "Carried out backup database backup.",
+      "message": "Load balancer in Lagos mainland region fixed.",
+      "technician": "Brady Saffire",
       "attention": false,
-      "date": "06-30-2020",
-      "technician": "Brady Saffire"
+      "date": "2020-08-06T11:57:18.711Z",
+      "id": 3
+    },
+    {
+      "message": "Carried out backup database backup.",
+      "technician": "Samantha Jones",
+      "attention": false,
+      "date": "2020-08-06T11:58:36.184Z",
+      "id": 4
+    },
+    {
+      "message": "Server 076 down.",
+      "technician": "Sandra Otedola",
+      "attention": false,
+      "date": "2020-08-06T11:58:57.904Z",
+      "id": 5
     }
   ],
   "technicians": [
