@@ -26,6 +26,27 @@ export const getTechnicians = () => async dispatch => {
 	dispatch(setLoading(false));
 };
 
+// delete technician
+export const deleteTechnician = id => async dispatch => {
+	dispatch(setLoading(true));
+
+	try {
+		await fetch("/technicians/" + id, {
+			method: "DELETE"
+		});
+		dispatch({
+			type: DELETE_TECHNICIAN,
+			payload: id
+		});
+	} catch (error) {
+		dispatch({
+			type: SET_TECHNICIANS_ERROR,
+			payload: error
+		});
+	}
+	dispatch(setLoading(false));
+};
+
 // set loading
 export const setLoading = (loading = true) => {
 	return {

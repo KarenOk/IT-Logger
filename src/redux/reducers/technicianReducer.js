@@ -19,6 +19,11 @@ export default (state = initialState, action) => {
 				...state,
 				technicians: action.payload
 			};
+		case DELETE_TECHNICIAN:
+			return {
+				...state,
+				technicians: state.technicians.filter(technician => technician.id !== action.payload)
+			};
 		default:
 			return state;
 	}
