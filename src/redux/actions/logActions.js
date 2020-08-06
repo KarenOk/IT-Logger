@@ -3,6 +3,7 @@ import {
 	ADD_LOG,
 	DELETE_LOG,
 	UPDATE_LOG,
+	SEARCH_LOGS,
 	SET_CURRENT,
 	CLEAR_CURRENT,
 	SET_LOGS_LOADING,
@@ -89,6 +90,24 @@ export const updateLog = log => async dispatch => {
 		});
 	}
 	dispatch(clearCurrent());
+	dispatch(setLoading(false));
+};
+
+export const searchLogs = query => async dispatch => {
+	dispatch(setLoading());
+	try {
+		const res = await fetch("/logs?q=" + query);
+		const data = await res.json();
+		dispatch({
+			type: SEARCH_LOGS,
+			payload: data
+		});
+	} catch (error) {
+		dispatch({
+			type: SEARCH_LOGS,
+			error: error.response.data
+		});
+	}
 	dispatch(setLoading(false));
 };
 

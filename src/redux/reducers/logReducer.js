@@ -3,6 +3,7 @@ import {
 	ADD_LOG,
 	DELETE_LOG,
 	UPDATE_LOG,
+	SEARCH_LOGS,
 	SET_CURRENT,
 	SET_LOGS_LOADING,
 	SET_LOGS_ERROR,
@@ -19,6 +20,7 @@ const initialState = {
 export default (state = initialState, action) => {
 	switch (action.type) {
 		case GET_LOGS:
+		case SEARCH_LOGS:
 			return {
 				...state,
 				logs: action.payload

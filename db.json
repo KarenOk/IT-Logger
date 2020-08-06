@@ -8,13 +8,6 @@
       "technician": "Samantha Jones"
     },
     {
-      "message": "Load balancer in Lagos mainland region fixed.",
-      "technician": "Brady Saffire",
-      "attention": false,
-      "date": "2020-08-06T11:57:18.711Z",
-      "id": 3
-    },
-    {
       "message": "Carried out backup database backup.",
       "technician": "Samantha Jones",
       "attention": false,
@@ -22,11 +15,11 @@
       "id": 4
     },
     {
+      "id": 5,
       "message": "Server 076 down.",
       "technician": "Sandra Otedola",
-      "attention": false,
-      "date": "2020-08-06T11:58:57.904Z",
-      "id": 5
+      "attention": true,
+      "date": "2020-08-06T13:51:40.620Z"
     }
   ],
   "technicians": [
